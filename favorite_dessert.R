@@ -1,6 +1,7 @@
 
 library(tidyverse)
-library(rvest)  # used to scrape website content
+library(rvest)
+library(skimr) # used to scrape website content
 
 # Check if that data folder exists and creates it if not
 dir.create("data", showWarnings = FALSE)
@@ -27,10 +28,7 @@ dessert_listing <- mutate(tolower(dessert_listing)
 library(dplyr)
 library(tidyr)
 
-inner_join(dessert_df, dessert_listing, by = "dessert")
+match <- inner_join(dessert_df, dessert_listing, by = "dessert")
 
-colum
-
-
-
+hist(dessert_listing)
 
