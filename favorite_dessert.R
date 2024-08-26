@@ -32,5 +32,5 @@ match <- inner_join(dessert_df, dessert_listing, by = "dessert")
 
 hist(dessert_listing)
 
-candy_vec <- c("sour patch", "sour worms", "warheads")
+candy_vec <- c("sour patch", "sour worms", "warheads", "bottle caps", "lemon heads")
 
